@@ -14,6 +14,8 @@ import javax.persistence.Embeddable;
 @Embeddable
 public class Pos {
     private String city;
+    private String detailAddress;
+
     private String street;
     private Integer zipcode;
 }

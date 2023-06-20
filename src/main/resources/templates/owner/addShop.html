@@ -37,39 +37,33 @@
             </div>
 
             <div>
-                <!--<label for="pos" th:text="#{label.shop.pos}">위치</label>
-                <input type="text" id="pos" th:field="*{pos}" th:errorclass="field-error" class="form-control" placeholder="위치를 입력해주세요">
-                <div th:errors="*{pos}" class="field-error">위치 오류</div>-->
-                <label for="pos" th:text="#{label.shop.pos}">위치</label>
-                <input type="button" onclick="DaumPostcode()" value="우편번호 찾기">
-                <input type="text" id="pos" th:field="*{pos}" th:errorclass="field-error" class="form-control" placeholder="위치를 입력해주세요">
-                <div th:errors="*{pos}" class="field-error">위치 오류</div>
-
-            </div>
-
-            <!--
-            <br>
-            <div>
-                <label for="pos">주소</label>
+                <!--
+                <label for="pos">매장 주소</label>
                 <div id="pos">
-                    <div>
-                        <label for="city">도시</label>
-                        <input type="text" id="city" th:field="*{city}" class="form-control" th:errorclass="field-error" placeholder="예) 서울">
-                        <div th:errors="*{city}" class="field-error">도시명 오류</div>
-                    </div>
-                    <div>
-                        <label for="street">도로명</label>
-                        <input type="text" id="street" th:field="*{street}" class="form-control" th:errorclass="field-error" placeholder="ex) ~로 ~길 ~동 ~호">
-                        <div th:errors="*{street}" class="field-error">도로명 오류</div>
-                    </div>
+                    <input type="button" onclick="execDaumPostcode()" value="우편번호 찾기"><br>
+
                     <div>
                         <label for="zipcode">우편번호</label>
-                        <input type="text" id="zipcode" th:field="*{zipcode}" class="form-control" th:errorclass="field-error" placeholder="예) 12345">
+                        <input type="text" id="zipcode" th:field="*{zipcode}" class="form-control" th:errorclass="field-error" placeholder="우편번호">
                         <div th:errors="*{zipcode}" class="field-error">우편번호 오류</div>
                     </div>
-                </div>
+                    <div>
+                        <label for="city">주소</label>
+                        <input type="text" id="city" th:field="*{city}" class="form-control" th:errorclass="field-error" placeholder="주소">
+                        <div th:errors="*{city}" class="field-error">주소명 오류</div>
+                    </div>
+                    <div>
+                        <input type="text" id="detailAddress" th:field="*{detailAddress}" placeholder="상세주소" class="form-control">
+                    </div>
+                    <div>
+                        <label for="street">참고항목</label>
+                        <input type="text" id="street" th:field="*{street}" class="form-control" th:errorclass="field-error" placeholder="참고항목">
+                        <div th:errors="*{street}" class="field-error">참고항목 오류</div>
+                    </div>
+
+                </div>-->
             </div>
-            <br>-->
+
 
             <hr class="my-4">
 
@@ -85,7 +79,7 @@
 </body>
 
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js">
-    //다음 주소찾기 api
+
 function DaumPostcode() {
     new daum.Postcode({
         oncomplete: function(data) {

@@ -1,15 +1,10 @@
 package hello.springmvcjpa.domain.shop;
 
-import hello.springmvcjpa.domain.Address;
 import hello.springmvcjpa.domain.Pos;
-import hello.springmvcjpa.domain.item.Item;
 import lombok.*;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
-import java.util.ArrayList;
-import java.util.List;
 
 
 @Getter
@@ -29,7 +24,7 @@ public class Shop {
     private String shop;
 
     private String pos;
-    /*@Embedded
+   /* @Embedded
     private Pos pos;*/
 
 
@@ -41,6 +36,7 @@ public class Shop {
 
     /*public Shop() {}*/
 
+    //public Shop(String shop, Pos pos) {
     public Shop(String shop, String pos) {
         this.shop = shop;
         this.pos = pos;

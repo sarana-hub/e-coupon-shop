@@ -21,13 +21,15 @@ import java.util.List;
 @AllArgsConstructor*/
 public class ShopForm {
     private Long id;
-    private String shop;
+    private String shop; //매장명
 
     private String pos;
     /*Pos*/
-    /*@NotEmpty
+   /* @NotEmpty
     private String city;
-    @NotEmpty
+    //@NotEmpty
+    private String detailAddress;
+    //@NotEmpty
     private String street;
     @NotNull
     private Integer zipcode;*/

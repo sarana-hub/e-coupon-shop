@@ -97,9 +97,9 @@ public class ShopController {
             return "owner/addShop";
         }
 
+        //Pos pos=new Pos(form.getCity(), form.getDetailAddress(), form.getStreet(), form.getZipcode());
+        //Shop shop = new Shop(form.getShop(), pos);
         Shop shop = new Shop(form.getShop(), form.getPos());
-        //Pos pos=new Pos(form.getCity(), form.getStreet(), form.getZipcode()); //
-        //Shop shop = new Shop(form.getShopName(), pos); //
 
         Long shopId= shopService.save(shop);
 

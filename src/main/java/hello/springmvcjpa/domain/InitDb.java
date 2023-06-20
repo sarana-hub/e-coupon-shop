@@ -32,19 +32,19 @@ public class InitDb {
 
         public void dbInit1() {
 
-            /*String loginId = "ww";
+            String loginId = "ww";
             String name1 = "점주다";
             String password = "0000";
             AccessRole role = AccessRole.OWNER;
             Address address = new Address("서울시 성북구 성북로5길", null,null, 07515);
 
-            Shop shop=new Shop("메종드민서쓰", "경기 용인시 처인구 금학로 121");
-            em.persist(shop);
+            /*Shop shop=new Shop("메종드민서쓰", "경기 용인시 처인구 금학로 121");
+            em.persist(shop);*/
             //Pos pos=new Pos("cityyy", "streeeet", 1201);
             //Shop shop=new Shop("cafe", pos);
 
             Customer customer=new Customer(loginId, password, name1, "01012345678", role, address);
-            em.persist(customer);*/
+            em.persist(customer);
 
             String loginId2 = "user";
             String name2 = "김유저";

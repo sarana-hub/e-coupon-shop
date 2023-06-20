@@ -38,8 +38,8 @@ public class InitDb {
             AccessRole role = AccessRole.OWNER;
             Address address = new Address("서울시 성북구 성북로5길", null,null, 07515);
 
-            Shop shop=new Shop("메종드민서쓰", "경기 용인시 처인구 금학로 121");
-            em.persist(shop);
+            /*Shop shop=new Shop("메종드민서쓰", "경기 용인시 처인구 금학로 121");
+            em.persist(shop);*/
             //Pos pos=new Pos("cityyy", "streeeet", 1201);
             //Shop shop=new Shop("cafe", pos);
 

@@ -98,7 +98,7 @@ public class OrderService {
         // 발신번호 및 수신번호는 반드시 01012345678 형태로 입력되어야 합니다.
         message.setFrom("01051049674");
         message.setTo(hp);
-        message.setText(item+"\n쿠폰번호: "+createKey());
+        message.setText("*상품명칭: "+item+"\n*쿠폰번호: "+createKey());
         //message.setImageId(imageId);
 
         SingleMessageSentResponse response = messageService.sendOne(new SingleMessageSendingRequest(message));
@@ -116,7 +116,7 @@ public class OrderService {
         // 발신번호 및 수신번호는 반드시 01012345678 형태로 입력되어야 합니다.
         message.setFrom("01051049674");
         message.setTo(hp);
-        message.setText(item+"\n쿠폰번호: "+createKey()+"\n"+text);
+        message.setText("*상품명칭: "+item+"\n*쿠폰번호: "+createKey()+"\n"+text);
         //message.setImageId(imageId);
 
         SingleMessageSentResponse response = messageService.sendOne(new SingleMessageSendingRequest(message));
